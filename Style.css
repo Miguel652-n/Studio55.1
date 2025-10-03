@@ -5,6 +5,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+body{
+    background-image: url(png-serviços.png);
+}
+
 header{
     width: 100%;
     display: flex;
@@ -115,11 +119,6 @@ main{
     gap: 20px;
 }
 
-footer{
-    width: 100%;
-    height: 80px;
-}
-
 .botao{
     background-color: #a67d2b;
     border: 1px solid #a67d2b;
@@ -136,71 +135,80 @@ a{
     color: white;
 }
 
-@media screen and (max-width: 390px){
+@media (max-width: 390px){
+    /* iPhone 12 Pro */
+    body{
+        background-image: none;
+        background-color: #151414;
+    }
     header{
-    background-color: rgba(0, 0, 0, 0);
-    padding: 1px 4px;
-    height: 10px;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 1px 4px;
+        height: 10px;
     }
     .logo{
-    bottom: -50px;
-    height: 80px;
+        bottom: -25px;
+        height: 50px;
     }
     .menu ul a{
-    font-size: 25px;
-    padding: 100px 0 0 0;
+        font-size: 12px;
+        padding: 130px 0 0 0;
     }
     .menu ul{
-    margin-left: 20px;
-    gap: 50px;
+        margin-left: -30px;
+        gap: 30px;
     }
     .menu ul a:hover{
-    transform: scale(1.2);
+        transform: scale(1.1);
     }
     main{
-    padding: 100px 50%;
+        padding: 80px 50%;
     }
     .servicos {
-    flex-direction: column;
+        flex-direction: column;
     }
     .categoria{
-    left: 5%;
+        left: -66%;
     }
     .categoria h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
     }
     .quadrados {
-    flex-wrap: initial;
-    gap: 10px;       
+        display: grid;
+        grid-template-columns: 80px 80px 80px;
+        grid-auto-rows: 90px;
+        flex-wrap: initial;
+        gap: 5px; 
     }
-    .quadrado {         
-    height: 140px;
+    .quadrado {
+        height: 60px;
+        flex: 0 0 20px;
     }
     .quadrado span {
-    font-size: 16px;
+        font-size: 12px;
     }
     .cortes {
-    right: initial;
+        right: initial;
     }
     .coloracao {
-    top: -140px;
-    right: initial;
+        top: -240px;
+        right: initial;
     }
     .penteados {
-    right: initial;
-    top: -280px;
+        right: initial;
+        top: -480px;
     }
+
     .botao{
-    margin: -20px 320px;
-    padding: 8px 10px;
-    width: 280px;
-    height: 120px;
+        margin: -25px 145px;
+        padding: 8px 10px;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        bottom: -30px;
     }
     a{
-    font-size: 40px;
+        font-size: 14px;
     }
-}
-@media screen and (max-width: 1024) {
-    
 }
